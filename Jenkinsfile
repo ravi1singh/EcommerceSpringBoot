@@ -23,7 +23,7 @@ pipeline {
                   }
 		
             }
-           /*  stage('Building image') {
+             stage('Building image') {
                 steps{
 		            sh "pwd"
                 script {
@@ -46,7 +46,7 @@ pipeline {
       steps{
         sh "docker rmi $registry:$BUILD_NUMBER"
       }
-    }
+    }/*
     stage('Execute Rundeck job') {
         steps {
           script {
