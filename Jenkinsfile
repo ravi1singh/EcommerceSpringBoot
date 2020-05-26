@@ -14,7 +14,7 @@ pipeline {
             }
             stage('Cloning Git') {
                 steps {
-                    git 'https://github.com/ravi1singh/ClacJava.git'
+                    git 'https://github.com/ravi1singh/EcommerceSpringBoot.git'
                         }
             }
             stage('Build') {
@@ -23,7 +23,7 @@ pipeline {
                   }
 		
             }
-             stage('Building image') {
+           /*  stage('Building image') {
                 steps{
 		            sh "pwd"
                 script {
@@ -61,6 +61,6 @@ pipeline {
           }
         }
     }
-            
+            */
       }
 }
